@@ -122,7 +122,11 @@ button {
 
 /*section hero*/
 
-.hero-box {
+.hero {
+  display: block;
+  color: var(--white-background);
+  padding-top: 188px;
+  padding-bottom: 188px;
   max-width: 1440рх;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -132,12 +136,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.hero {
-  display: block;
-  color: var(--white-background);
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-text {
