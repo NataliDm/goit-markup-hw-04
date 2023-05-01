@@ -470,6 +470,12 @@ button {
   background-color: var(--dark);
   padding: 100px 0;
 }
+.footer-box {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+  margin-left: auto;
+}
 .footer-link {
   display: inline-block;
   margin-bottom: 16px;
@@ -483,7 +489,23 @@ button {
   letter-spacing: 0.02em;
   color: var(--light);
 }
-
+.social-footer-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  margin-bottom: 16px;
+}
+.social-footer {
+  display: flex;
+  margin-left: auto;
+}
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 /*-PORTFOLIO-*/
 .portfolio {
   padding: 96px 0 120px;
