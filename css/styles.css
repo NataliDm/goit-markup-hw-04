@@ -121,10 +121,18 @@ button {
 /*section hero*/
 
 .hero {
-  background: var(--dark);
+  background: var(--hero-background);
+  min-width: 1440рх;
   color: var(--white-background);
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero/people-office\ 1.png), url(/images/hero/Dark-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .hero-text {
   font-weight: 700;
@@ -177,12 +185,14 @@ button {
   padding: 12px 24px;
   border: 1px solid var(--accent);
   border-radius: 4px;
+
 }
 .filtr-button:hover,
 .filtr-button:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filtr-button:active {
@@ -242,7 +252,11 @@ button {
 .list-item-view {
   width: calc((100% - 72px) / 4);
   min-width: 264px;
+
 }
+
+  
+
 .list-item {
   gap: 24px;
 }
@@ -321,6 +335,7 @@ button {
 .team-list-item {
   background: var(--white-background);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .card-content {
   padding: 32px 16px;
@@ -398,8 +413,14 @@ button {
 }
 .project-card {
   width: calc((100% - 48px) / 3);
+  border-radius: 0px 0px 4px 4px;
 }
+.project-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  
 
+}
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--accent);
