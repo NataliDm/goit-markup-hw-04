@@ -124,6 +124,7 @@ button {
 
 .hero {
   max-width: 1440px;
+  background-color: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -131,12 +132,12 @@ button {
     url(../images/hero/people-office.jpeg);
   color: var(--white-background);
   padding: 188px 0;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 120px;
 }
 
 .hero-text {
@@ -209,7 +210,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--text);
   background-color: var(--white-background);
 }
@@ -222,8 +223,6 @@ button {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
-  margin-left: 0;
 }
 
 .logoweb {
@@ -237,14 +236,11 @@ button {
   list-style-type: none;
   color: var(--dark);
   gap: 40px;
+  margin-left: 76px;
 }
 /*About company*/
 .company {
-  display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 120px;
 }
 .company-descr {
   font-weight: 500;
@@ -305,12 +301,13 @@ button {
 }
 /*What we are doing*/
 .tasks {
-  padding-bottom: 120px;
+  padding: 0;
 }
 .task-list {
   display: flex;
   gap: 24px;
   margin-right: 0;
+  margin-bottom: 120px;
 }
 .tasks-text {
   font-weight: 700;
@@ -328,7 +325,9 @@ button {
 /*our team*/
 .team {
   background-color: var(--light);
-  padding: 120px 0;
+}
+.team-content {
+  margin-bottom: 32px;
 }
 .team-header {
   font-weight: 700;
@@ -368,12 +367,11 @@ button {
   letter-spacing: 0.02em;
   color: var(--text);
   text-align: center;
+  margin-bottom: 8px;
 }
-.team-box {
-  padding: 32px 0;
-}
+
 .pic-describe {
-  padding: 32px 0;
+  margin-bottom: 32px;
 }
 .social-link-team {
   display: flex;
@@ -417,6 +415,7 @@ button {
 .social-list {
   display: block;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 /*page 2 portfolio   examples*/
@@ -437,7 +436,6 @@ button {
 }
 /*CUSTOMERS*/
 .customers {
-  display: flex;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -482,13 +480,11 @@ button {
 
 /*footer*/
 .footer {
-  display: flex;
   background-color: var(--dark);
   padding: 100px 0;
 }
 .footer-box {
   display: block;
-  align-items: baseline;
   margin-right: 120px;
 }
 .footer-link {
@@ -499,7 +495,7 @@ button {
 .footer-text {
   margin-right: auto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   width: 264px;
   letter-spacing: 0.02em;
   color: var(--light);
@@ -518,7 +514,6 @@ button {
 }
 .social-footer {
   display: block;
-  margin-left: 120px;
 }
 .footer-social-icon {
   display: flex;
