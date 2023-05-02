@@ -133,9 +133,9 @@ button {
   margin-left: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+      rgba(46, 47, 66, 70%)
     ),
-    url(../images/hero/people-office\ 1.png), url(../images/hero/Dark-bg.png);
+    url(../images/hero/people-office\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
