@@ -123,19 +123,17 @@ button {
 /*section hero*/
 
 .hero {
-  display: block;
-  color: var(--white-background);
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440рх;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 70%)
     ),
     url(../images/hero/people-office\ 1.png);
+  color: var(--white-background);
+  padding: 188px 0;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
