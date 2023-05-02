@@ -327,7 +327,7 @@ button {
   background-color: var(--light);
 }
 .team-content {
-  margin-bottom: 32px;
+  padding: 32px 0;
 }
 .team-header {
   font-weight: 700;
@@ -370,9 +370,6 @@ button {
   margin-bottom: 8px;
 }
 
-.pic-describe {
-  margin-bottom: 32px;
-}
 .social-link-team {
   display: flex;
   align-items: center;
