@@ -137,7 +137,6 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 120px;
 }
 
 .hero-text {
@@ -240,7 +239,8 @@ button {
 }
 /*About company*/
 .company {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .company-descr {
   font-weight: 500;
@@ -301,13 +301,12 @@ button {
 }
 /*What we are doing*/
 .tasks {
-  padding: 0;
+  padding-bottom: 120px;
 }
 .task-list {
   display: flex;
   gap: 24px;
   margin-right: 0;
-  margin-bottom: 120px;
 }
 .tasks-text {
   font-weight: 700;
@@ -325,6 +324,7 @@ button {
 /*our team*/
 .team {
   background-color: var(--light);
+  padding: 120px 0;
 }
 .team-content {
   padding: 32px 0;
