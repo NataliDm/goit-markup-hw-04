@@ -32,6 +32,11 @@ a {
 img {
   display: block;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 .container {
   width: 1158px;
   padding: 0 15px 0 15px;
@@ -41,9 +46,11 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .only-header {
   display: flex;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -61,6 +68,7 @@ img {
   flex-direction: row;
   gap: 0px;
 }
+
 .logo-studio {
   color: #2e2f42;
   font-family: "Raleway";
@@ -70,6 +78,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -84,25 +93,38 @@ img {
   letter-spacing: 0.02em;
   gap: 40px;
 }
+
 .nav-list-item {
   display: block;
-  width: 48px;
   padding: 24px 0;
   color: #2e2f42;
 }
+
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: #404bbf;
 }
+
 .nav-list-item:active {
   text-decoration: underline;
 }
+
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .address {
   display: flex;
   font-style: normal;
   align-items: center;
   margin-left: auto;
 }
+
 .my-address {
   display: flex;
   gap: 40px;
@@ -111,6 +133,7 @@ img {
 .e-mail {
   margin-right: 0;
 }
+
 .mobil-number {
   margin-right: 0;
 }
@@ -121,6 +144,7 @@ img {
   height: 24px;
   color: #434455;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
@@ -148,6 +172,12 @@ img {
 .hero {
   padding: 188px 0;
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/bgr-people-office\ 1.jpg);
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -215,6 +245,7 @@ img {
   line-height: 40px;
   color: #2e2f42;
 }
+
 .features-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -223,6 +254,7 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .features-list-text {
   font-weight: 400;
   font-size: 16px;
@@ -231,11 +263,24 @@ img {
   color: #434455;
 }
 
+.feauters-icons-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 /*our team*/
 .our-team {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
+
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -246,10 +291,12 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
+
 .our-team-list {
   display: flex;
   gap: 24px;
 }
+
 .our-team-list-item {
   align-items: center;
   justify-content: center;
@@ -257,7 +304,10 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   background: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 .our-team-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -267,31 +317,64 @@ img {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .card-title {
   padding: 32px 0;
 }
+
 .our-team-list-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-
   color: #434455;
 }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-text {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: block;
+}
+.social-icons-svg {
+  fill: #4d5ae5;
+}
+.footer-box {
+  display: block;
+}
+
 /*our portfolio*/
 .our-portfolio {
   padding: 120px 0;
 }
+
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
 }
+
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
 .portfolio-case-title {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -321,6 +404,7 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .portfolio-list-text {
   font-weight: 400;
   font-size: 16px;
@@ -328,6 +412,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /*footer*/
 
 .footer {
@@ -335,10 +420,12 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-text {
   font-weight: 400;
   font-size: 16px;
@@ -347,6 +434,13 @@ img {
   color: #f4f4fd;
   max-width: 264px;
 }
+
 .logo-footer {
   color: #f4f4fd;
+}
+.color-change {
+fill:#4d5ae5;
+}
+.color-change:hover {
+fill: #31D0AA;
 }
