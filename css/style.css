@@ -329,6 +329,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .social-media {
@@ -450,10 +451,10 @@ img {
   color: #f4f4fd;
 }
 .color-change {
-fill:#4d5ae5;
+  fill: #4d5ae5;
 }
 .color-change:hover {
-fill: #31D0AA;
+  fill: #31d0aa;
 }
 .wraper {
   display: flex;
