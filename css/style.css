@@ -335,16 +335,27 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 8px;
 }
-
+.color-change-card {
+  fill: #4d5ae5;
+}
+.color-change-card:hover {
+  fill: #404bbf;
+}
 .social-text {
   color: #fff;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 208px;
+  margin-left: 120px;
 }
 .social-icons-svg {
   fill: #4d5ae5;
@@ -443,4 +454,7 @@ fill:#4d5ae5;
 }
 .color-change:hover {
 fill: #31D0AA;
+}
+.wraper {
+  display: flex;
 }
